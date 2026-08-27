@@ -32,7 +32,7 @@ export default function PricingPage() {
       <p className="text-xs uppercase tracking-[0.2em] text-gold-500">Pricing</p>
       <h1 className="mt-2 font-display text-5xl">One free clip. Then Pro.</h1>
       <p className="mt-4 max-w-xl text-paper-300">
-        USD. Cancel anytime. If Stripe keys are not set, checkout opens a working test-mode stub.
+        USD. Cancel anytime.
       </p>
       <div className="mt-10 grid gap-6 md:grid-cols-2">
         <article className="rounded-[2rem] border border-white/10 bg-ink-800 p-7">
@@ -57,7 +57,7 @@ export default function PricingPage() {
             <li>Unlimited renders</li>
             <li>No watermark</li>
             <li>Same 9:16 pipeline</li>
-            <li>Priority in the queue (v1: same box)</li>
+            <li>Priority in the queue</li>
           </ul>
           <button
             onClick={checkout}
