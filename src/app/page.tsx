@@ -45,7 +45,7 @@ export default function LandingPage() {
                 Free vs Pro
               </Link>
             </div>
-            <p className="mt-5 text-sm text-paper-500">One free render. Watermarked. No card required.</p>
+            <p className="mt-5 text-sm text-paper-500">Sign in with a magic link. First clip is free and watermarked.</p>
           </div>
           <div className="relative mx-auto w-full max-w-sm">
             <div className="hairline rounded-[2.2rem] bg-ink-800 p-3 shadow-glow">
@@ -123,7 +123,7 @@ export default function LandingPage() {
       <section className="border-t border-white/5 bg-gradient-to-b from-ink-800/30 to-transparent">
         <div className="mx-auto max-w-3xl px-5 py-20 text-center">
           <h2 className="font-display text-4xl">Make the clip before standup.</h2>
-          <p className="mt-4 text-paper-300">Studio is one drop zone. The first render is free and watermarked.</p>
+          <p className="mt-4 text-paper-300">Sign in, drop a deck, get a clip. First one is free and watermarked.</p>
           <Link
             href="/studio"
             className="mt-8 inline-flex rounded-full bg-gold-500 px-6 py-3 text-sm font-semibold text-ink-950 hover:bg-gold-400"
