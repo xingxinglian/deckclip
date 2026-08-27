@@ -55,12 +55,11 @@ export function quotaFor(actor: Actor): Quota {
       plan: "free",
     };
   }
-  const remaining = Math.max(0, 1 - actor.guest.renderCount);
   return {
-    allowed: remaining > 0,
-    remaining,
+    allowed: false,
+    remaining: 0,
     watermark: true,
-    reason: remaining > 0 ? undefined : "need_auth",
+    reason: "need_auth",
     plan: "guest",
   };
 }
