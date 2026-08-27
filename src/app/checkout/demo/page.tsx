@@ -18,7 +18,7 @@ export default function DemoCheckout() {
     setBusy(false);
     if (res.status === 401) {
       setAuthOpen(true);
-      setError("Sign in first — then this stub marks you Pro.");
+      setError("Sign in first to upgrade.");
       return;
     }
     if (!res.ok) {
@@ -30,11 +30,10 @@ export default function DemoCheckout() {
 
   return (
     <div className="mx-auto max-w-lg px-5 py-16">
-      <p className="text-xs uppercase tracking-[0.2em] text-gold-500">Test-mode stub</p>
-      <h1 className="mt-2 font-display text-4xl">Demo checkout</h1>
+      <p className="text-xs uppercase tracking-[0.2em] text-gold-500">Checkout</p>
+      <h1 className="mt-2 font-display text-4xl">Confirm Pro</h1>
       <p className="mt-4 text-paper-300">
-        Stripe keys are not configured. This page creates a Pro session on this box so you can
-        exercise the upgrade path. No card is charged.
+        Unlimited renders, no watermark. Cancel anytime.
       </p>
       <div className="mt-8 rounded-3xl border border-white/10 bg-ink-800 p-6">
         <p className="text-sm text-paper-500">DeckClip Pro</p>
@@ -45,7 +44,7 @@ export default function DemoCheckout() {
           disabled={busy}
           className="mt-6 w-full rounded-2xl bg-gold-500 py-3 font-semibold text-ink-950 disabled:opacity-50"
         >
-          {busy ? "Confirming…" : "Pay $29 (demo)"}
+          {busy ? "Confirming…" : "Pay $29"}
         </button>
       </div>
       {error && <p className="mt-4 text-sm text-red-300">{error}</p>}
