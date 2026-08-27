@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body {
+  background: #0b0c10;
+  color: #f7f3ea;
+}
+
+body {
+  min-height: 100vh;
+}
+
+::selection {
+  background: #e8a317;
+  color: #0b0c10;
+}
+
+.grain {
+  background-image: radial-gradient(rgba(247, 243, 234, 0.04) 0.6px, transparent 0.6px);
+  background-size: 3px 3px;
+}
+
+.hairline {
+  box-shadow: inset 0 0 0 1px rgba(247, 243, 234, 0.08);
+}
